@@ -83,30 +83,32 @@ function Home() {
           <button className="btn">show more</button>
         </div>
 
-        <div className="theAncientCivilization">
-          <p>the ancient</p>
-          <h1>
-            Egyptian <span>civilization</span>
-          </h1>
-        </div>
-        <div className="infoAncient">
-          <div className="texts">
-            <p>
-              The ancient Egyptian civilization, famous for its pyramids,
-              pharaohs, mummies and tombs, flourished for thousands of years.
-              But what was its lasting impact?
-            </p>
-            <p>
-              Watch the video below to learn how ancient Egypt contributed to
-              modern-day society with its many cultural developments,
-              particularly in language & mathematics.
-            </p>
+        <div className="ancientCivilizationContainer">
+          <div className="theAncientCivilization">
+            <p>the ancient</p>
+            <h1>
+              Egyptian <span>civilization</span>
+            </h1>
           </div>
-          <div className="infoAncientVideo">
-            <video ref={videoRef} src={Ancient} typeof="video/mp4"></video>
-            <button onClick={togglePlayback}>
-              {isPlaying ? "Pause" : "Play"}
-            </button>
+          <div className="infoAncient">
+            <div className="texts">
+              <p>
+                The ancient Egyptian civilization, famous for its pyramids,
+                pharaohs, mummies and tombs, flourished for thousands of years.
+                But what was its lasting impact?
+              </p>
+              <p>
+                Watch the video below to learn how ancient Egypt contributed to
+                modern-day society with its many cultural developments,
+                particularly in language & mathematics.
+              </p>
+            </div>
+            <div className="infoAncientVideo">
+              <video ref={videoRef} src={Ancient} typeof="video/mp4"></video>
+              <button onClick={togglePlayback}>
+                {isPlaying ? "Pause" : "Play"}
+              </button>
+            </div>
           </div>
         </div>
         <div className="backInTime">
@@ -130,12 +132,12 @@ function Home() {
               <h2>red pyramid</h2>
             </div>
             <div className="img2">
-            <div className="darkBackground"></div>
+              <div className="darkBackground"></div>
               <p>cairo</p>
               <h2>giza pyramid</h2>
             </div>
             <div className="img3">
-            <div className="darkBackground"></div>
+              <div className="darkBackground"></div>
               <p>luxor</p>
               <h2>valley of the kings</h2>
             </div>
@@ -145,7 +147,9 @@ function Home() {
         <div className="sponsorsPartners">
           <div className="info">
             <p>thank you</p>
-            <h1>To our Sponsors and Event <span>Partners</span></h1>
+            <h1>
+              To our Sponsors and Event <span>Partners</span>
+            </h1>
           </div>
           <div className="back">
             <div className="darkBack"></div>

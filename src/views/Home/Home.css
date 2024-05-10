@@ -288,23 +288,31 @@
 
 /* ------------------------------------------------ */
 
-.homeContainer .learnMore .theAncientCivilization {
+.homeContainer .learnMore .ancientCivilizationContainer {
+  background-color: rgb(17, 9, 1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10rem 0;
+}
+
+.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  margin-top: 10rem;
 }
 
-.homeContainer .learnMore .theAncientCivilization p {
+.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization p {
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
-  color: rgb(17, 9, 1);
+  color: rgb(199, 181, 160);
 }
 
-.homeContainer .learnMore .theAncientCivilization h1 {
+.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization h1 {
   color: white;
   font-size: 35px;
   font-weight: 800;
@@ -315,19 +323,19 @@
   font-weight: 500;
 }
 
-.homeContainer .learnMore .theAncientCivilization span {
-  color: rgb(17, 9, 1);
+.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization span {
+  color: rgb(203, 182, 157);
   font-weight: 600;
 }
 
 /* ----------------------------------------------- */
 
-.homeContainer .learnMore .infoAncient {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient {
   display: flex;
   flex-direction: column;
 }
 
-.homeContainer .learnMore .infoAncient .texts {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .texts {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,31 +344,32 @@
   gap: 15rem;
 }
 
-.homeContainer .learnMore .infoAncient .texts p {
-  font-size: 1.5rem;
-  color: rgb(17, 9, 1);
-  width: 50rem;
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .texts p {
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+  width: 60rem;
   letter-spacing: 1px;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
-.homeContainer .learnMore .infoAncient .infoAncientVideo {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
 
-.homeContainer .learnMore .infoAncient .infoAncientVideo {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo {
   position: relative;
 }
 
-.homeContainer .learnMore .infoAncient .infoAncientVideo video {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo video {
   width: 50%;
   height: 40rem;
   height: auto;
 }
 
-.homeContainer .learnMore .infoAncient .infoAncientVideo button {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -372,7 +381,7 @@
   cursor: pointer;
 }
 
-.homeContainer .learnMore .infoAncient .infoAncientVideo .progressBar {
+.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo .progressBar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -383,6 +392,7 @@
 
 .homeContainer
   .learnMore
+  .ancientCivilizationContainer
   .infoAncient
   .infoAncientVideo
   .progressBar
