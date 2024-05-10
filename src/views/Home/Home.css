@@ -1,0 +1,653 @@
+.homeContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(199, 181, 160);
+}
+
+.homeContainer .background video {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 99.1vw;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -111;
+}
+
+.homeContainer .homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  top: 40rem;
+}
+
+.homeContainer .homeContent .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.homeContainer .homeContent .content h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgb(255, 231, 199);
+  letter-spacing: 1.5px;
+}
+
+.homeContainer .homeContent .content h1 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 5.2rem;
+  background-color: transparent;
+  /* backdrop-filter: blur(10px); */
+  text-transform: uppercase;
+  width: 60%;
+  color: white;
+}
+
+.homeContainer .btn button {
+  width: 18rem;
+  height: 4.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid rgb(203, 182, 157);
+  border-radius: 3px;
+  color: rgb(203, 182, 157);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  z-index: 1;
+  position: relative;
+}
+
+.homeContainer .btn button a {
+  color: rgb(203, 182, 157);
+  text-decoration: none;
+}
+
+.homeContainer .btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(169, 142, 108);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.homeContainer .btn button:hover a,
+.homeContainer .btn button:focus a {
+  color: white;
+}
+
+.homeContainer .btn button:hover::before,
+.homeContainer .btn button:focus::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------------- */
+
+.homeContainer .learnMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  padding-top: 5rem;
+  background-color: rgb(199, 181, 160);
+  padding-top: 15rem;
+}
+
+.homeContainer .learnMore .tenThings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.homeContainer .learnMore .tenThings p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .tenThings h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 60rem;
+  text-align: center;
+  /* font-family: "Cormorant Garamond", serif; */
+  font-weight: 500;
+}
+
+.homeContainer .learnMore .tenThings span {
+  color: rgb(17, 9, 1);
+  font-weight: 600;
+}
+
+/* ------------------------------------------ */
+
+.learnMore .info-tutankhamunImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.learnMore .info-tutankhamunImage .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.learnMore .info-tutankhamunImage .info h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.learnMore .info-tutankhamunImage .info p {
+  width: 53rem;
+  font-size: 15px;
+  color: rgb(17, 9, 1);
+  line-height: 2.2rem;
+}
+
+.learnMore .info-tutankhamunImage .info a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.learnMore .info-tutankhamunImage .info a:hover {
+  color: rgb(103, 81, 31);
+}
+
+.learnMore .info-tutankhamunImage img {
+  width: 20rem;
+}
+
+.learnMore .info-tutankhamunImage img:hover {
+  transform: scale(1.2);
+}
+/* ------------------------------------------------ */
+
+.learnMore .info-catsImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.learnMore .info-catsImage .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.learnMore .info-catsImage .info h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.learnMore .info-catsImage .info p {
+  width: 53rem;
+  font-size: 15px;
+  color: rgb(17, 9, 1);
+  line-height: 2.2rem;
+}
+
+.learnMore .info-catsImage .info a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.learnMore .info-catsImage .info a:hover {
+  color: rgb(103, 81, 31);
+}
+
+.learnMore .info-catsImage img {
+  width: 32rem;
+}
+
+.learnMore .info-catsImage img:hover {
+  transform: scale(1.2);
+}
+
+/* ------------------------------------------ */
+
+.learnMore .showMoreButton .btn {
+  width: 25rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 1px solid rgb(103, 81, 31);
+  border-radius: 3px;
+  color: rgb(17, 9, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  z-index: 1;
+  position: relative;
+}
+
+.learnMore .showMoreButton .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(17, 9, 1);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.learnMore .showMoreButton .btn:hover,
+.learnMore .showMoreButton .btn:focus {
+  color: white;
+}
+
+.learnMore .showMoreButton .btn:hover::before,
+.learnMore .showMoreButton .btn:focus::before {
+  transform: scale(1);
+}
+
+/* ------------------------------------------------ */
+
+.homeContainer .learnMore .theAncientCivilization {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.homeContainer .learnMore .theAncientCivilization p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .theAncientCivilization h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 60rem;
+  text-align: center;
+  /* font-family: "Cormorant Garamond", serif; */
+  font-weight: 500;
+}
+
+.homeContainer .learnMore .theAncientCivilization span {
+  color: rgb(17, 9, 1);
+  font-weight: 600;
+}
+
+/* ----------------------------------------------- */
+
+.homeContainer .learnMore .infoAncient {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer .learnMore .infoAncient .texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15rem;
+}
+
+.homeContainer .learnMore .infoAncient .texts p {
+  font-size: 1.5rem;
+  color: rgb(17, 9, 1);
+  width: 50rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.homeContainer .learnMore .infoAncient .infoAncientVideo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.homeContainer .learnMore .infoAncient .infoAncientVideo {
+  position: relative;
+}
+
+.homeContainer .learnMore .infoAncient .infoAncientVideo video {
+  width: 50%;
+  height: 40rem;
+  height: auto;
+}
+
+.homeContainer .learnMore .infoAncient .infoAncientVideo button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.homeContainer .learnMore .infoAncient .infoAncientVideo .progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.homeContainer
+  .learnMore
+  .infoAncient
+  .infoAncientVideo
+  .progressBar
+  .progress {
+  height: 100%;
+  background-color: white;
+  width: 0;
+}
+/* ----------------------------------------------- */
+
+.homeContainer .learnMore .backInTime {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.homeContainer .learnMore .backInTime p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .backInTime h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 60rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.homeContainer .learnMore .backInTime span {
+  color: rgb(17, 9, 1);
+  font-weight: 600;
+}
+
+.homeContainer .learnMore .infoBackInTime {
+  width: 100%;
+  text-align: center;
+}
+
+.homeContainer .learnMore .infoBackInTime p {
+  color: rgb(17, 9, 1);
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/*---------------------------------------------*/
+
+.homeContainer .learnMore .backInTimeImages {
+  position: relative;
+  width: 105rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer .learnMore .backInTimeImages .images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img1 {
+  width: 30rem;
+  height: 60rem;
+  background-image: url("../../assets/images/giza-red-pyramid.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img2 {
+  width: 30rem;
+  height: 60rem;
+  background-image: url("../../assets/images/giza-pyramid.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img3 {
+  width: 30rem;
+  height: 60rem;
+  background-image: url("../../assets/images/valey-of-the-king.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img1 .darkBackground,
+.img2 .darkBackground,
+.img3 .darkBackground {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img1 p,
+.img2 p,
+.img3 p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  z-index: 222;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img1 h2,
+.img2 h2,
+.img3 h2 {
+  z-index: 222;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .img1:hover,
+.img2:hover,
+.img3:hover {
+  transform: scale(1.1);
+  z-index: 1111111111111;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .iconL,
+.iconR {
+  font-size: 4rem;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .backInTimeImages .images .iconL {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+}
+
+.homeContainer .learnMore .backInTimeImages .images .iconR {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------- */
+
+.homeContainer .learnMore .sponsorsPartners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+
+.homeContainer .learnMore .sponsorsPartners .info p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .sponsorsPartners .info h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 60rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.homeContainer .learnMore .sponsorsPartners .info span {
+  color: rgb(17, 9, 1);
+  font-weight: 600;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back {
+  width: 99.1vw;
+  padding: 5rem 0;
+  opacity: 0.4;
+  background-image: url("../../assets//images/egypt-camel-pyramid.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back .darkBack {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(169, 142, 108, 0.6);
+  position: absolute;
+  top: 0;
+  z-index: 333;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back .logo1 {
+  background-image: url("../../assets/images/ng-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 17rem;
+  height: 5rem;
+
+  z-index: 44444444444;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back .logo2 {
+  background-image: url("../../assets/images/pi-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 5rem;
+  z-index: 44444;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back .logo3 {
+  background-image: url("../../assets/images/bbc-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 5rem;
+  z-index: 44444;
+}
+
+.homeContainer .learnMore .sponsorsPartners .back .logo4 {
+  background-image: url("../../assets/images/lp-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 10rem;
+  z-index: 44444;
+}
