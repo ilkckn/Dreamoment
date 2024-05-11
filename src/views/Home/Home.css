@@ -38,7 +38,7 @@
 }
 
 .homeContainer .homeContent .content h3 {
-  font-size: 25px;
+  font-size: clamp(1.5rem, 1.5vw, 5rem);
   font-weight: 300;
   text-transform: uppercase;
   color: rgb(255, 231, 199);
@@ -46,7 +46,7 @@
 }
 
 .homeContainer .homeContent .content h1 {
-  font-size: 40px;
+  font-size: clamp(1.9rem, 2vw, 5rem);
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 5.2rem;
@@ -124,7 +124,7 @@
 }
 
 .homeContainer .learnMore .tenThings p {
-  font-size: 20px;
+  font-size: clamp(1.5rem, 1.8vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(17, 9, 1);
@@ -132,7 +132,7 @@
 
 .homeContainer .learnMore .tenThings h1 {
   color: white;
-  font-size: 35px;
+  font-size: clamp(2rem, 2.2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
@@ -163,7 +163,7 @@
 }
 
 .learnMore .info-tutankhamunImage .info h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -172,13 +172,13 @@
 
 .learnMore .info-tutankhamunImage .info p {
   width: 53rem;
-  font-size: 15px;
+  font-size: clamp(1.5rem, 1vw, 5rem);
   color: rgb(17, 9, 1);
   line-height: 2.2rem;
 }
 
 .learnMore .info-tutankhamunImage .info a {
-  font-size: 1.4rem;
+  font-size: clamp(1.5rem, 1vw, 5rem);
   text-decoration: none;
   letter-spacing: 1px;
   color: white;
@@ -212,7 +212,7 @@
 }
 
 .learnMore .info-catsImage .info h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,13 +221,13 @@
 
 .learnMore .info-catsImage .info p {
   width: 53rem;
-  font-size: 15px;
+  font-size: clamp(1.5rem, .9vw, 5rem);
   color: rgb(17, 9, 1);
   line-height: 2.2rem;
 }
 
 .learnMore .info-catsImage .info a {
-  font-size: 1.4rem;
+  font-size: clamp(1.5rem, 1vw, 5rem);
   text-decoration: none;
   letter-spacing: 1px;
   color: white;
@@ -306,7 +306,7 @@
 }
 
 .homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization p {
-  font-size: 20px;
+  font-size: clamp(1.5rem, 1.4vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(199, 181, 160);
@@ -314,7 +314,7 @@
 
 .homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization h1 {
   color: white;
-  font-size: 35px;
+  font-size: clamp(1.5rem, 2.2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
@@ -345,7 +345,7 @@
 }
 
 .homeContainer .learnMore .ancientCivilizationContainer .infoAncient .texts p {
-  font-size: 15px;
+  font-size: clamp(1.5rem, 1.1vw, 5rem);
   font-weight: 100;
   color: white;
   width: 60rem;
@@ -413,7 +413,7 @@
 }
 
 .homeContainer .learnMore .backInTime p {
-  font-size: 20px;
+  font-size: clamp(1.5rem, 1.4vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(17, 9, 1);
@@ -421,7 +421,7 @@
 
 .homeContainer .learnMore .backInTime h1 {
   color: white;
-  font-size: 35px;
+  font-size: clamp(1.5rem, 2.2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
@@ -441,7 +441,7 @@
 
 .homeContainer .learnMore .infoBackInTime p {
   color: rgb(17, 9, 1);
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   letter-spacing: 0.5px;
 }
 
@@ -449,7 +449,7 @@
 
 .homeContainer .learnMore .backInTimeImages {
   position: relative;
-  width: 105rem;
+  /* width: 105rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,20 +508,38 @@
   gap: 0.5rem;
 }
 
+.homeContainer .learnMore .backInTimeImages .images .img4 {
+  width: 30rem;
+  height: 60rem;
+  background-image: url("../../assets/images/great-sphinx.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+  gap: 0.5rem;
+}
+
 .homeContainer .learnMore .backInTimeImages .images .img1 .darkBackground,
 .img2 .darkBackground,
-.img3 .darkBackground {
+.img3 .darkBackground,
+.img4 .darkBackground {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
 }
 
 .homeContainer .learnMore .backInTimeImages .images .img1 p,
 .img2 p,
-.img3 p {
-  font-size: 1.7rem;
+.img3 p,
+.img4 p {
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -530,17 +548,19 @@
 
 .homeContainer .learnMore .backInTimeImages .images .img1 h2,
 .img2 h2,
-.img3 h2 {
+.img3 h2,
+.img4 h2 {
   z-index: 222;
   color: white;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 1.6vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
 }
 
 .homeContainer .learnMore .backInTimeImages .images .img1:hover,
 .img2:hover,
-.img3:hover {
+.img3:hover,
+.img4:hover {
   transform: scale(1.1);
   z-index: 1111111111111;
 }
@@ -553,17 +573,18 @@
 
 .homeContainer .learnMore .backInTimeImages .images .iconL {
   position: absolute;
-  left: 0;
+  left: -5rem;
   top: 50%;
   cursor: pointer;
 }
 
 .homeContainer .learnMore .backInTimeImages .images .iconR {
   position: absolute;
-  right: 0;
+  right: -5rem;
   top: 50%;
   cursor: pointer;
 }
+
 
 /* --------------------------------------------------- */
 
@@ -573,10 +594,11 @@
   align-items: center;
   gap: 5rem;
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 .homeContainer .learnMore .sponsorsPartners .info p {
-  font-size: 20px;
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 500;
   text-transform: uppercase;
   color: rgb(17, 9, 1);
@@ -584,7 +606,7 @@
 
 .homeContainer .learnMore .sponsorsPartners .info h1 {
   color: white;
-  font-size: 35px;
+  font-size: clamp(1.5rem, 2.2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;

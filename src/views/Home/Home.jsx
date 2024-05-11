@@ -138,8 +138,13 @@ function Home() {
             </div>
             <div className="img3">
               <div className="darkBackground"></div>
-              <p>luxor</p>
-              <h2>valley of the kings</h2>
+              <p>karnak</p>
+              <h2>temple of karnak</h2>
+            </div>
+            <div className="img4">
+              <div className="darkBackground"></div>
+              <p>cairo</p>
+              <h2>great sphinx</h2>
             </div>
             <RiArrowRightWideFill className="iconR" />
           </div>

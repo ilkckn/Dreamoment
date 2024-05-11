@@ -6,6 +6,9 @@
   position: fixed;
   top: 0;
   z-index: 111;
+  padding: 0 5rem;
+  background-color: #110901;
+  backdrop-filter: blur(10px);
 }
 
 .navbarContainer nav {
@@ -15,15 +18,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
 }
 
-.navbarContainer nav .logo .logoLink {
-  font-size: 20px;
-  text-decoration: none;
-  letter-spacing: 2px;
-  color: white;
+.navbarContainer nav .logo .logoLink img {
+  width: 15rem;
 }
 
 .navbarContainer nav ul {
@@ -55,7 +53,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  border-bottom: 1.5px solid rgb(212, 171, 100);
+  border-bottom: 1.5px solid rgb(228, 203, 172);
   z-index: -1;
   transition: transform 0.6s ease;
   transform: scaleX(0);
@@ -64,7 +62,7 @@
 
 .navbarContainer nav ul li .link:hover,
 .navbarContainer nav ul li .link:focus {
-  color: rgb(212, 171, 100);
+  color: rgb(228, 203, 172);
   font-weight: 600;
 }
 

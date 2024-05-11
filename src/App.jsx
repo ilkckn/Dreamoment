@@ -5,6 +5,7 @@ import Home from "./views/Home/Home";
 import About from './views/About/About';
 import Tours from './views/Tours/Tours';
 import Contact from './views/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Tours />} />
           <Route path="/" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
