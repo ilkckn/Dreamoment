@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
@@ -6,7 +7,7 @@ import About from './views/About/About';
 import Tours from './views/Tours/Tours';
 import Contact from './views/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import { Routes, Route } from "react-router-dom";
+import Booking from "./components/Booking/Booking";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<About/>} />
-          <Route path="/" element={<Tours />} />
-          <Route path="/" element={<Contact />} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element= {<Booking />} />
         </Routes>
         <Footer />
       </div>

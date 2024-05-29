@@ -34,6 +34,11 @@ function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink className="link" to="/booking">
+                Booking
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

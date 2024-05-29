@@ -1,9 +1,16 @@
 import React, { useState, useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import image1 from "../../assets/images/giza-pyramid.jpg";
+import image2 from "../../assets/images/giza-red-pyramid.jpg";
+import image3 from "../../assets/images/great-sphinx.jpg";
+import image4 from "../../assets/images/temple-of-karnak.jpg";
 import Desert from "../../assets/video/Desert.mp4";
 import Ancient from "../../assets/video/Ancient Egypt.mp4";
 import tutankhamun from "../../assets/images/tutankhamun.png";
 import cat from "../../assets/images/cat.png";
-import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
+// import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
 import "./Home.css";
 
 function Home() {
@@ -18,6 +25,14 @@ function Home() {
       videoRef.current.pause();
       setIsPlaying(false);
     }
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
   };
 
   return (
@@ -123,32 +138,36 @@ function Home() {
             story-loving people.
           </p>
         </div>
-        <div className="backInTimeImages">
-          <div className="images">
-            <RiArrowLeftWideFill className="iconL" />
+
+        <div className="slider-container">
+          <Slider {...settings}>
             <div className="img1">
               <div className="darkBackground"></div>
+              <img src={image1} alt="" />
               <p>giza</p>
               <h2>red pyramid</h2>
             </div>
             <div className="img2">
               <div className="darkBackground"></div>
+              <img src={image2} alt="" />
               <p>cairo</p>
               <h2>giza pyramid</h2>
             </div>
             <div className="img3">
               <div className="darkBackground"></div>
+              <img src={image3} alt="" />
               <p>karnak</p>
               <h2>temple of karnak</h2>
             </div>
             <div className="img4">
               <div className="darkBackground"></div>
+              <img src={image4} alt="" />
               <p>cairo</p>
               <h2>great sphinx</h2>
             </div>
-            <RiArrowRightWideFill className="iconR" />
-          </div>
+          </Slider>
         </div>
+
         <div className="sponsorsPartners">
           <div className="info">
             <p>thank you</p>

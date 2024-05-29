@@ -124,7 +124,7 @@
 }
 
 .homeContainer .learnMore .tenThings p {
-  font-size: clamp(1.5rem, 1.8vw, 5rem);
+  font-size: clamp(1.5rem, 1.6vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(17, 9, 1);
@@ -132,7 +132,7 @@
 
 .homeContainer .learnMore .tenThings h1 {
   color: white;
-  font-size: clamp(2rem, 2.2vw, 5rem);
+  font-size: clamp(2rem, 2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
@@ -149,11 +149,13 @@
 /* ------------------------------------------ */
 
 .learnMore .info-tutankhamunImage {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10rem;
+  padding-left: 20rem;
 }
 
 .learnMore .info-tutankhamunImage .info {
@@ -163,7 +165,7 @@
 }
 
 .learnMore .info-tutankhamunImage .info h2 {
-  font-size: clamp(1.5rem, 1.2vw, 5rem);
+  font-size: clamp(1.5rem, 1.1vw, 5rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -172,13 +174,13 @@
 
 .learnMore .info-tutankhamunImage .info p {
   width: 53rem;
-  font-size: clamp(1.5rem, 1vw, 5rem);
+  font-size: clamp(1.5rem, .9vw, 5rem);
   color: rgb(17, 9, 1);
   line-height: 2.2rem;
 }
 
 .learnMore .info-tutankhamunImage .info a {
-  font-size: clamp(1.5rem, 1vw, 5rem);
+  font-size: clamp(1.5rem, .9vw, 5rem);
   text-decoration: none;
   letter-spacing: 1px;
   color: white;
@@ -198,11 +200,13 @@
 /* ------------------------------------------------ */
 
 .learnMore .info-catsImage {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 10rem;
+  padding-right: 20rem;
 }
 
 .learnMore .info-catsImage .info {
@@ -212,7 +216,7 @@
 }
 
 .learnMore .info-catsImage .info h2 {
-  font-size: clamp(1.5rem, 1.2vw, 5rem);
+  font-size: clamp(1.5rem, 1.1vw, 5rem);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,7 +225,7 @@
 
 .learnMore .info-catsImage .info p {
   width: 53rem;
-  font-size: clamp(1.5rem, .9vw, 5rem);
+  font-size: clamp(1.5rem, 0.9vw, 5rem);
   color: rgb(17, 9, 1);
   line-height: 2.2rem;
 }
@@ -297,7 +301,10 @@
   padding: 10rem 0;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .theAncientCivilization {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -305,25 +312,36 @@
   width: 100%;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization p {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .theAncientCivilization
+  p {
   font-size: clamp(1.5rem, 1.4vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(199, 181, 160);
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization h1 {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .theAncientCivilization
+  h1 {
   color: white;
   font-size: clamp(1.5rem, 2.2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
   text-align: center;
-  /* font-family: "Cormorant Garamond", serif; */
   font-weight: 500;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .theAncientCivilization span {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .theAncientCivilization
+  span {
   color: rgb(203, 182, 157);
   font-weight: 600;
 }
@@ -345,7 +363,7 @@
 }
 
 .homeContainer .learnMore .ancientCivilizationContainer .infoAncient .texts p {
-  font-size: clamp(1.5rem, 1.1vw, 5rem);
+  font-size: clamp(1.5rem, 1vw, 5rem);
   font-weight: 100;
   color: white;
   width: 60rem;
@@ -353,23 +371,41 @@
   line-height: 2.5rem;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .infoAncient
+  .infoAncientVideo {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .infoAncient
+  .infoAncientVideo {
   position: relative;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo video {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .infoAncient
+  .infoAncientVideo
+  video {
   width: 50%;
   height: 40rem;
   height: auto;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo button {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .infoAncient
+  .infoAncientVideo
+  button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -381,7 +417,12 @@
   cursor: pointer;
 }
 
-.homeContainer .learnMore .ancientCivilizationContainer .infoAncient .infoAncientVideo .progressBar {
+.homeContainer
+  .learnMore
+  .ancientCivilizationContainer
+  .infoAncient
+  .infoAncientVideo
+  .progressBar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -413,7 +454,7 @@
 }
 
 .homeContainer .learnMore .backInTime p {
-  font-size: clamp(1.5rem, 1.4vw, 5rem);
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
   color: rgb(17, 9, 1);
@@ -441,31 +482,54 @@
 
 .homeContainer .learnMore .infoBackInTime p {
   color: rgb(17, 9, 1);
-  font-size: clamp(1.5rem, 1.2vw, 5rem);
+  font-size: clamp(1.5rem, 1.1vw, 5rem);
   letter-spacing: 0.5px;
 }
 
 /*---------------------------------------------*/
 
-.homeContainer .learnMore .backInTimeImages {
-  position: relative;
-  /* width: 105rem; */
+.homeContainer .learnMore .slider-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.homeContainer .learnMore .backInTimeImages .images {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.homeContainer .learnMore .backInTimeImages .images .img1 {
+.homeContainer .learnMore .slider-container img {
   width: 30rem;
   height: 60rem;
-  background-image: url("../../assets/images/giza-red-pyramid.jpg");
-  background-position: center;
-  background-size: cover;
+}
+
+.slick-track {
+  height: 60rem;
+}
+
+.slick-slider {
+  width: 90rem;
+}
+
+.slick-next::before {
+  font-size: 20px;
+  color: rgb(17, 9, 1);
+}
+
+.slick-prev::before {
+  font-size: 20px;
+  color: rgb(17, 9, 1);
+}
+
+.homeContainer .learnMore .slider-container .img1 {
+  height: 60rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.homeContainer .learnMore .slider-container .img2 {
   border-radius: 3px;
   display: flex;
   justify-content: flex-end;
@@ -476,12 +540,7 @@
   gap: 0.5rem;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img2 {
-  width: 30rem;
-  height: 60rem;
-  background-image: url("../../assets/images/giza-pyramid.jpg");
-  background-position: center;
-  background-size: cover;
+.homeContainer .learnMore .slider-container .img3 {
   border-radius: 3px;
   display: flex;
   justify-content: flex-end;
@@ -492,12 +551,7 @@
   gap: 0.5rem;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img3 {
-  width: 30rem;
-  height: 60rem;
-  background-image: url("../../assets/images/valey-of-the-king.jpg");
-  background-position: center;
-  background-size: cover;
+.homeContainer .learnMore .slider-container .img4 {
   border-radius: 3px;
   display: flex;
   justify-content: flex-end;
@@ -508,64 +562,48 @@
   gap: 0.5rem;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img4 {
-  width: 30rem;
-  height: 60rem;
-  background-image: url("../../assets/images/great-sphinx.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 3px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5rem;
-  position: relative;
-  gap: 0.5rem;
-}
-
-.homeContainer .learnMore .backInTimeImages .images .img1 .darkBackground,
+.homeContainer .learnMore .slider-container .img1 .darkBackground,
 .img2 .darkBackground,
 .img3 .darkBackground,
 .img4 .darkBackground {
   width: 100%;
-  height: 100%;
+  height: 60rem;
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img1 p,
+.homeContainer .learnMore .slider-container .img1 p,
 .img2 p,
 .img3 p,
 .img4 p {
-  font-size: clamp(1.5rem, 1.2vw, 5rem);
+  position: absolute;
+  top: 53rem;
+  left: 40%;
+  transform: translate(0, 50%);
+  font-size: clamp(1.5rem, 1vw, 5rem);
   font-weight: 400;
   color: white;
   text-transform: uppercase;
   z-index: 222;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img1 h2,
+.homeContainer .learnMore .slider-container .img1 h2,
 .img2 h2,
 .img3 h2,
 .img4 h2 {
+  position: absolute;
+  top: 55rem;
+  left: 25%;
+  transform: translate(0, 50%);
   z-index: 222;
   color: white;
-  font-size: clamp(1.5rem, 1.6vw, 5rem);
+  font-size: clamp(1.5rem, 1.2vw, 5rem);
   font-weight: 500;
   text-transform: capitalize;
 }
 
-.homeContainer .learnMore .backInTimeImages .images .img1:hover,
-.img2:hover,
-.img3:hover,
-.img4:hover {
-  transform: scale(1.1);
-  z-index: 1111111111111;
-}
-
-.homeContainer .learnMore .backInTimeImages .images .iconL,
+/* .homeContainer .learnMore .backInTimeImages .images .iconL,
 .iconR {
   font-size: 4rem;
   color: rgb(17, 9, 1);
@@ -583,8 +621,7 @@
   right: -5rem;
   top: 50%;
   cursor: pointer;
-}
-
+} */
 
 /* --------------------------------------------------- */
 
@@ -606,7 +643,7 @@
 
 .homeContainer .learnMore .sponsorsPartners .info h1 {
   color: white;
-  font-size: clamp(1.5rem, 2.2vw, 5rem);
+  font-size: clamp(1.5rem, 2vw, 5rem);
   font-weight: 800;
   letter-spacing: 2px;
   width: 60rem;
